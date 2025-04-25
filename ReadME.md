@@ -8,12 +8,12 @@
                                        │         CBT Chatbot (LLM API)    │  ← OpenAI GPT-4o / Claude / Llama
                                        └────────────┬─────────────┬───────┘
                                                     │             │
-                                            ┌───────▼──────┐  ┌────▼────────┐ 
-    # How the chatbot "remember" previous   │ Memory Handler│ │Emotion      │  ← Natural Language Processing
-      interactions                          │ (Contextual   │ │Detection/   │  # Emotion Detection: Identifying moods like sadness，
-                                            │ Memory        | | Cognition   |    anxiety, anger, etc.
-                                            |Logic)         │ │ Tagger      │  # Cognition Tagging: Recognizing cognitive distortions 
-                                            └───────┬───────┘ └────────────┘   (e.g., catastrophizing, overgeneralization)。
+                                            ┌───────▼──────┐ ┌────▼────────┐ 
+    # How the chatbot "remember" previous   │ Memory Handler││Emotion      │  ← Natural Language Processing
+      interactions                          │ (Contextual   ││Detection/   │  # Emotion Detection: Identifying moods like sadness，
+                                            │ Memory        || Cognition   |    anxiety, anger, etc.
+                                            |Logic)         ││ Tagger      │  # Cognition Tagging: Recognizing cognitive distortions 
+                                            └───────┬───────┘ └────────────┘   (e.g., catastrophizing, overgeneralization).
                                                     │
                                          ┌──────────▼──────────┐
                                          │    Database Layer   │  ← PostgreSQL / Firebase / FAISS / Pinecone
